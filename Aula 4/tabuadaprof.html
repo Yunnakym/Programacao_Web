@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 2</title>
+</head>
+
+<body>
+    <form>
+        <label>Informe um n° entre 1 a 10</label>
+        <input type="number" id="nu">
+    </form>
+    <button onclick="gerarTabuada()">Gerar Tabuada</button>
+    <p id="result"></p>
+</body>
+<script>
+    function gerarTabuada(){
+        let nu = Number(document.getElementById("nu").value);
+        let text = "";
+        if(nu >= 1 && nu <= 10){
+            for (let cont = 0; cont <= 10; cont++){
+            text += nu + " X " + cont + " = " + nu * cont + "<br>";
+    }
+    document.getElementById('result').innerHTML = text;
+    }
+    else{
+        alert("Somente número entre 1 a 10")
+    }
+    }
+   
+</script>
+
+</html>

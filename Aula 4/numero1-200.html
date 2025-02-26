@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 1</title>
+</head>
+<body>
+    <h2>Numeros de 1 a 200</h2>
+    <p id="numero"></p>  
+</body>
+<script>
+    //laço For
+    let num = "";
+    for(let cont = 1; cont <= 200; cont++){
+        num = num+ "Volta: "+cont+"<br>"
+        //alert("Volta: "+cont)
+    }
+    document.getElementById("numero").innerHTML = num;
+</script>
+</html>
